@@ -1,0 +1,61 @@
+                                        /*~~~~~ F O N T S ~~~~~*/
+                                        @font-face {
+                                            src: url(fonts/OpenSansCondensed-Bold.ttf);
+                                            font-family: opensansbold;
+                                        }
+                                        @font-face {
+                                            src: url(fonts/OpenSansCondensed-Light.ttf);
+                                            font-family: opensans;
+                                        }
+                                        @font-face {
+                                            src: url(fonts/OpenSansCondensed-LightItalic.ttf);
+                                            font-family: opensansitalic;
+                                        }
+                                        @font-face {
+                                            src: url(fonts/AnticSlab-Regular.ttf);
+                                            font-family: antic;
+                                        }
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+html {
+    height: 100vh;
+    margin: 0;
+}
+body { 
+    height: 100%;
+    font-family: opensans;
+    font-size: 4vw;
+}
+#name {
+    font-size: 8vw;
+}
+img {
+    max-width: 90vw;
+}
+#content {
+    margin: 20px;
+}
+#header-img {
+    position: absolute;
+    opacity: 0.5;
+    pointer-events: none;
+}
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.tab, .tab-highlight {
+    font-size: 5vw;
+    padding: 8px;
+}
+.tab-highlight {
+    color: pink;
+}
+#tagline {
+    font-family: opensansbold;
+    font-size: 3vw;
+}
