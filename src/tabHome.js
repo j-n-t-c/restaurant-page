@@ -15,6 +15,13 @@ function displayHome() {
         textContent: 'Why donuts? The team’s research uncovered that Warsaw, PA’s historic old market was seriously lacking in the baked goods department. The donut duo found an affordable storefront in the old police station - a perfect fit.',
         parent: copyContainer
     });
+
+    const img = create({
+        type: 'img',
+        cl: 'body-img',
+        src: './img/donuts4.jpeg',
+        parent: copyContainer
+    })
 }
 
 export default displayHome;

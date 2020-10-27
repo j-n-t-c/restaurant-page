@@ -14,7 +14,7 @@ function init() {
     const img = create({
         type: 'img',
         id: 'header-img',
-        src: './img/donuts1.jpg',
+        src: './img/donuts3.png',
         parent: header
     })
 
@@ -24,7 +24,11 @@ function init() {
         textContent: 'DUDLEY\'S DONUTS',
         parent: header
     });
-
+    const tabContainer = create({
+        type: 'div',
+        id: 'tab-container',
+        parent: header
+    });
     const tabHome = create({
         type: 'div',
         cl: 'tab-highlight',
@@ -38,7 +42,7 @@ function init() {
                 setActiveTab('tab-home')
             }
         },
-        parent: header
+        parent: tabContainer
     });
 
     const spanHome = create ({
@@ -60,7 +64,7 @@ function init() {
                 setActiveTab('tab-menu')
             }
         },
-        parent: header
+        parent: tabContainer
     });
 
     const spanMenu = create ({
@@ -82,7 +86,7 @@ function init() {
                 setActiveTab('tab-contact')
             }
         },
-        parent: header
+        parent: tabContainer
     });
 
     const spanContact = create ({
@@ -102,6 +106,7 @@ function init() {
         id: 'copy-container',
         parent: mainContent
     })
+
 
     displayHome();
 }
